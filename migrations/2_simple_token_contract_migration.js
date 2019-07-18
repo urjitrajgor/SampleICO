@@ -2,7 +2,7 @@ const SimpleToken = artifacts.require("SimpleToken");
 const GenericCrowdsale = artifacts.require("GenericCrowdsale");
 
 module.exports =  async (deployer, network, [owner]) => {
-  await deployer.deploy(SimpleToken, "Tooploox", "TPX", 18, 21000000);
+  await deployer.deploy(SimpleToken, "Tech Token", "TEC", 18, 21000000);
 
   const now = Math.floor(Date.now() / 1000);
 
@@ -20,7 +20,5 @@ module.exports =  async (deployer, network, [owner]) => {
 
   const token = await SimpleToken.deployed();
 
-  //const amount = 20000000000000000000000000 * (10 ** 18);
-  
   await token.transfer(GenericCrowdsale.address, "20000000000000000000000000", {from: owner});
 };

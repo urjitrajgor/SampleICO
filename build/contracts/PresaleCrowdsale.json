@@ -1050,14 +1050,95 @@
   },
   "networks": {
     "5777": {
-      "events": {},
+      "events": {
+        "0x6faf93231a456e552dbc9961f58d9713ee4f2e69d15f1975b050ef0911053a7b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "purchaser",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "beneficiary",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "TokensPurchased",
+          "type": "event",
+          "signature": "0x6faf93231a456e552dbc9961f58d9713ee4f2e69d15f1975b050ef0911053a7b"
+        },
+        "0xee1504a83b6d4a361f4c1dc78ab59bfa30d6a3b6612c403e86bb01ef2984295f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "WhitelistedAdded",
+          "type": "event",
+          "signature": "0xee1504a83b6d4a361f4c1dc78ab59bfa30d6a3b6612c403e86bb01ef2984295f"
+        },
+        "0x270d9b30cf5b0793bbfd54c9d5b94aeb49462b8148399000265144a8722da6b6": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "WhitelistedRemoved",
+          "type": "event",
+          "signature": "0x270d9b30cf5b0793bbfd54c9d5b94aeb49462b8148399000265144a8722da6b6"
+        },
+        "0x22380c05984257a1cb900161c713dd71d39e74820f1aea43bd3f1bdd20961299": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "WhitelistAdminAdded",
+          "type": "event",
+          "signature": "0x22380c05984257a1cb900161c713dd71d39e74820f1aea43bd3f1bdd20961299"
+        },
+        "0x0a8eb35e5ca14b3d6f28e4abf2f128dbab231a58b56e89beb5d636115001e165": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "WhitelistAdminRemoved",
+          "type": "event",
+          "signature": "0x0a8eb35e5ca14b3d6f28e4abf2f128dbab231a58b56e89beb5d636115001e165"
+        }
+      },
       "links": {},
-      "address": "0x3A07C1828558152651f2612133EA44bC60cFB16C",
-      "transactionHash": "0x9b3bcd0f55b126ef731d7d6d531d1c4129c6a859a25a10386eeb2fd3cdb7175d"
+      "address": "0x39f6aD2533B13B87A224546A202aDA72b24b95F6",
+      "transactionHash": "0xd061fdfdf550299ceb0030fce2083abfa3cf4613485d307c70e4ecee1677dd3e"
     }
   },
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-07-16T10:53:28.005Z",
+  "updatedAt": "2019-07-18T13:10:07.397Z",
   "devdoc": {
     "methods": {
       "buyTokens(address)": {

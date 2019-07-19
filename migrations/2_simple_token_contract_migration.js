@@ -6,10 +6,13 @@ module.exports =  async (deployer, network, [owner]) => {
 
   const now = Math.floor(Date.now() / 1000);
 
+  console.log("now:"+now);
   const day = 24 * 60 * 60;
 
-  const openingtime = now;
-
+  const seconds =  60;
+  const openingtime = now ;
+  //const openingtime = now + 10 * seconds;
+  console.log("openingtime:"+openingtime);
   const closingtime = openingtime + 2 * day;
 
   const rate = 1000;
